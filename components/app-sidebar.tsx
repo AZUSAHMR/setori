@@ -4,6 +4,7 @@ import * as React from "react";
 import {
     House,
     ScrollText,
+    CalendarCheck,
     ChartArea,
     Music,
     ChevronRight,
@@ -50,6 +51,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             title: "ホーム",
             url: "/",
             icon: House,
+        },
+        {
+            title: "スケジュール",
+            url: "/schedule",
+            icon: CalendarCheck,
         },
         {
             title: "統計",
