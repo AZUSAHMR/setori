@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { differenceInDays } from "date-fns";
+import { differenceInCalendarDays } from "date-fns";
 import { TZDate } from "@date-fns/tz";
 import { Instagram, Twitter } from "lucide-react";
 import {
@@ -21,9 +21,9 @@ import Schedule from "@/public/schedule.json";
 export default function Home() {
     const now = TZDate.tz("Asia/Tokyo");
     const [date] = Object.keys(Schedule).filter(
-        (x) => differenceInDays(now, new TZDate(x, "Asia/Tokyo")) <= 0,
+        (x) => differenceInCalendarDays(now, new TZDate(x, "Asia/Tokyo")) <= 0,
     );
-    const diff = differenceInDays(new TZDate(date, "Asia/Tokyo"), now);
+    const diff = differenceInCalendarDays(new TZDate(date, "Asia/Tokyo"), now);
 
     return (
         <>

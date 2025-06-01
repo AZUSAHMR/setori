@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { differenceInDays } from "date-fns";
+import { differenceInCalendarDays } from "date-fns";
 import { TZDate } from "@date-fns/tz";
 import { ChevronRight, Instagram, Twitter } from "lucide-react";
 import { COUNTER, count, sort } from "@/lib/ranking";
@@ -43,7 +43,7 @@ export default function Page({
     const date = Object.keys(Schedule)
         .filter(
             (x) =>
-                differenceInDays(
+                differenceInCalendarDays(
                     TZDate.tz("Asia/Tokyo"),
                     new TZDate(x, "Asia/Tokyo"),
                 ) <= 0,

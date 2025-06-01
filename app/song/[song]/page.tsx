@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { differenceInDays } from "date-fns";
+import { differenceInCalendarDays } from "date-fns";
 import { TZDate } from "@date-fns/tz";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -21,7 +21,7 @@ import Setlist from "@/public/setlist.json";
 import Song from "@/public/song.json";
 
 const calcDate = (date1: string, date2?: string) => {
-    return differenceInDays(
+    return differenceInCalendarDays(
         date2 ? new TZDate(date2, "Asia/Tokyo") : TZDate.tz("Asia/Tokyo"),
         new TZDate(date1, "Asia/Tokyo"),
     );
