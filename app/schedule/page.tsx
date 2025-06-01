@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { differenceInDays } from "date-fns";
+import { TZDate } from "@date-fns/tz";
 import { Instagram, Twitter } from "lucide-react";
 import {
     Table,
@@ -24,7 +25,11 @@ export default function Page() {
     ];
 
     const date = Object.keys(Schedule).filter(
-        (x) => differenceInDays(new Date(), new Date(x)) <= 0,
+        (x) =>
+            differenceInDays(
+                TZDate.tz("Asia/Tokyo"),
+                new TZDate(x, "Asia/Tokyo"),
+            ) <= 0,
     );
 
     return (

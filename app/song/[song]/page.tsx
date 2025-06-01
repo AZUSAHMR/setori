@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { differenceInDays } from "date-fns";
+import { TZDate } from "@date-fns/tz";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import {
@@ -20,13 +21,9 @@ import Setlist from "@/public/setlist.json";
 import Song from "@/public/song.json";
 
 const calcDate = (date1: string, date2?: string) => {
-    const parsedDate1 = date1.split("/").map((x) => ~~x);
-    const parsedDate2 = date2?.split("/").map((x) => ~~x);
     return differenceInDays(
-        parsedDate2
-            ? new Date(parsedDate2[0], parsedDate2[1] - 1, parsedDate2[2])
-            : new Date(),
-        new Date(parsedDate1[0], parsedDate1[1] - 1, parsedDate1[2]),
+        date2 ? new TZDate(date2, "Asia/Tokyo") : TZDate.tz("Asia/Tokyo"),
+        new TZDate(date1, "Asia/Tokyo"),
     );
 };
 const getRanking = (ranking: COUNTER, target: string) => {

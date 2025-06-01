@@ -3,13 +3,14 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "TZ=Asia/Tokyo next dev --turbopack",
+        "dev": "TZ=UTC next dev --turbopack",
         "build": "next build",
-        "start": "TZ=Asia/Tokyo next start",
+        "start": "TZ=UTC next start",
         "lint": "next lint",
         "prettier": "prettier . --write"
     },
     "dependencies": {
+        "@date-fns/tz": "^1.2.0",
         "@radix-ui/react-avatar": "^1.1.10",
         "@radix-ui/react-collapsible": "^1.1.11",
         "@radix-ui/react-dialog": "^1.1.14",
