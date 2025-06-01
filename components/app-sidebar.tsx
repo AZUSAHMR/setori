@@ -1,9 +1,12 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
     House,
     ScrollText,
+    MapPinHouse,
     CalendarCheck,
     ChartArea,
     Music,
@@ -24,10 +27,7 @@ import {
     SidebarMenuSubButton,
     SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
-
 import { Sidebar, SidebarContent, SidebarRail } from "@/components/ui/sidebar";
-import Link from "next/link";
-
 import Setlist from "@/public/setlist.json";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -66,8 +66,40 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             title: "セットリスト",
             url: "/setlist",
             icon: ScrollText,
-            isActive: true,
+            isActive: usePathname().startsWith("/setlist"),
             items: setlistList,
+        },
+        {
+            title: "会場",
+            url: "/place",
+            icon: MapPinHouse,
+            isActive: usePathname().startsWith("/place"),
+            items: [
+                {
+                    title: "北海道 ・ 東北",
+                    url: `/place/${encodeURIComponent("北海道 ・ 東北")}`,
+                },
+                {
+                    title: "関東",
+                    url: `/place/${encodeURIComponent("関東")}`,
+                },
+                {
+                    title: "中部",
+                    url: `/place/${encodeURIComponent("中部")}`,
+                },
+                {
+                    title: "近畿",
+                    url: `/place/${encodeURIComponent("近畿")}`,
+                },
+                {
+                    title: "中国 ・ 四国",
+                    url: `/place/${encodeURIComponent("中国 ・ 四国")}`,
+                },
+                {
+                    title: "九州 ・ 沖縄",
+                    url: `/place/${encodeURIComponent("九州 ・ 沖縄")}`,
+                },
+            ],
         },
         {
             title: "曲",

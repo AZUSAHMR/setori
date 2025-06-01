@@ -2,6 +2,7 @@ declare module "@/public/schedule.json" {
     const value: {
         [date: string]: {
             place: string;
+            area: string;
             link: {
                 instagram?: string;
                 twitter?: string;

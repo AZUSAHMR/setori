@@ -60,7 +60,14 @@ export default function Page() {
                                 <TableCell className="whitespace-nowrap w-[1%] font-medium">
                                     {x}
                                 </TableCell>
-                                <TableCell>{Schedule[x].place}</TableCell>
+                                <TableCell>
+                                    <Link
+                                        className="block"
+                                        href={`/place/${encodeURIComponent(Schedule[x].place)}`}
+                                    >
+                                        {Schedule[x].place}
+                                    </Link>
+                                </TableCell>
                                 <TableCell className="whitespace-nowrap w-[1%]">
                                     {Schedule[x].open}
                                 </TableCell>

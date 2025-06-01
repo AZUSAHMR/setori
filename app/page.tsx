@@ -60,7 +60,14 @@ export default function Home() {
                             <TableCell className="whitespace-nowrap w-[1%] font-medium">
                                 {date} {diff > 0 && `(${diff}日後)`}
                             </TableCell>
-                            <TableCell>{Schedule[date].place}</TableCell>
+                            <TableCell>
+                                <Link
+                                    className="block"
+                                    href={`/place/${encodeURIComponent(Schedule[date].place)}`}
+                                >
+                                    {Schedule[date].place}
+                                </Link>
+                            </TableCell>
                             <TableCell className="whitespace-nowrap w-[1%]">
                                 {Schedule[date].open}
                             </TableCell>
