@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 import { AppSidebar } from "@/components/app-sidebar";
@@ -24,6 +26,8 @@ export default function RootLayout({
                     <AppSidebar />
                     <SidebarInset>{children}</SidebarInset>
                 </SidebarProvider>
+                <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );
