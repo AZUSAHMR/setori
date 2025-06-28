@@ -177,7 +177,12 @@ export default function Page({
                                         <span className="flex-1">
                                             {date.at(0)}{" "}
                                             {Setlist[date.at(0)!].place} (
-                                            {calcDate(date.at(0)!)}日前)
+                                            {Object.keys(Setlist).length -
+                                                Object.keys(Setlist).indexOf(
+                                                    date.at(0)!,
+                                                ) -
+                                                1}
+                                            回前 ・ {calcDate(date.at(0)!)}日前)
                                         </span>
                                         <ChevronRight className="md:hidden" />
                                     </Link>
