@@ -137,5 +137,15 @@
         },
         "open": "18:00",
         "start": "19:00"
+    },
+    "2025/10/5": {
+        "place": "山形 米沢 西條天満公園",
+        "area": "北海道 ・ 東北",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DLZm4gnt8_A/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1938572659727675628"
+        },
+        "open": "9:00",
+        "start": "9:30"
     }
 }
