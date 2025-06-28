@@ -4,7 +4,7 @@ declare module "@/public/setlist.json" {
             place: string;
             area: string;
             setlist: string[][];
-            encore?: string[];
+            encore?: string[][];
         };
     };
     export default value;

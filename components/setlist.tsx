@@ -57,12 +57,20 @@ export default function SetList({ date }: { date: string }) {
     setlist.pop();
 
     if (data.encore) {
-        setlist.push(<Song key={`encore`} index={0} song="-encore-"></Song>);
-        setlist.push(
-            ...data.encore.map((song) => (
-                <Song key={`${index}`} index={index++} song={song}></Song>
-            )),
-        );
+        for (let i = 0; i < data.encore.length; i++) {
+            setlist.push(
+                <Song
+                    key={`encore${i}`}
+                    index={0}
+                    song={`-${["", "double "][i]}encore-`}
+                ></Song>,
+            );
+            setlist.push(
+                ...data.encore[i].map((song) => (
+                    <Song key={`${index}`} index={index++} song={song}></Song>
+                )),
+            );
+        }
     }
 
     return (

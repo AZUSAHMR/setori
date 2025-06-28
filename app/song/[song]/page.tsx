@@ -68,7 +68,7 @@ export default function Page({
         .filter(
             (date) =>
                 Setlist[date].setlist.flat().includes(title) ||
-                Setlist[date].encore?.includes(title),
+                Setlist[date].encore?.flat().includes(title),
         )
         .reverse();
 
@@ -117,14 +117,16 @@ export default function Page({
         }
 
         if (Setlist[target].encore) {
-            const i = Setlist[target].encore.indexOf(title);
+            for (const encore of Setlist[target].encore) {
+                const i = encore.indexOf(title);
 
-            if (i !== -1) {
-                if (i > 0) {
-                    count(before, Setlist[target].encore[i - 1]);
-                }
-                if (i < Setlist[target].encore.length - 1) {
-                    count(after, Setlist[target].encore[i + 1]);
+                if (i !== -1) {
+                    if (i > 0) {
+                        count(before, encore[i - 1]);
+                    }
+                    if (i < Setlist[target].encore.length - 1) {
+                        count(after, encore[i + 1]);
+                    }
                 }
             }
         }

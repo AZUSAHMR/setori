@@ -35,7 +35,7 @@ export const calc = (target = "") => {
             count(start, songs.at(0)!);
             count(end, songs.at(-1)!);
 
-            Setlist[date].encore?.forEach((song) => {
+            Setlist[date].encore?.flat().forEach((song) => {
                 count(best, song);
                 count(encore, song);
             });
