@@ -1,19 +1,10 @@
 {
-    "2025/7/4": {
-        "place": "愛知 豊川 GROOVE STOCK",
-        "area": "中部",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DGg3GFrNwBr/"
-        },
-        "open": "18:30",
-        "start": "19:30"
-    },
     "2025/7/5": {
         "place": "高知 CARAVAN SARY",
         "area": "中国 ・ 四国",
         "link": {
-            "instagram": "https://www.instagram.com/p/DIFtj-HBirz/",
-            "twitter": "https://x.com/OLEDICKFOGGY/status/1908729456916828458"
+            "instagram": "https://www.instagram.com/p/DLjw5J0y90r/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1940986685686534369"
         },
         "open": "18:00",
         "start": "19:00"
@@ -22,8 +13,8 @@
         "place": "愛知 名古屋 HUCK FINN",
         "area": "中部",
         "link": {
-            "instagram": "https://www.instagram.com/p/DIFtqhKuCEc/",
-            "twitter": "https://x.com/OLEDICKFOGGY/status/1908730267797512519"
+            "instagram": "https://www.instagram.com/p/DLjy1f5SJXi/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1940988013439599056"
         },
         "open": "17:00",
         "start": "18:00"
@@ -127,5 +118,14 @@
         },
         "open": "9:00",
         "start": "9:30"
+    },
+    "2025/11/8": {
+        "place": "大阪 心斎橋",
+        "area": "近畿",
+        "link": {
+            "twitter": "https://x.com/stormydudes/status/1941059448728068597"
+        },
+        "open": "11:30",
+        "start": "12:30"
     }
 }
