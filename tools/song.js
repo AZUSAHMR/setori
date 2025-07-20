@@ -5,7 +5,7 @@ const setlistSongs = [
     ...new Set(
         Object.keys(Setlist)
             .map((date) =>
-                [Setlist[date].setlist.flat(), Setlist[date].encore.flat()]
+                [Setlist[date].setlist.flat(), Setlist[date].encore?.flat()]
                     .filter(Boolean)
                     .flat(),
             )
