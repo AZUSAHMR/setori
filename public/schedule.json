@@ -49,6 +49,36 @@
         "open": "18:00",
         "start": "19:00"
     },
+    "2025/9/14": {
+        "place": "東京 新宿 LOFT",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DMSXMcFtlPP/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1946736762522628605"
+        },
+        "open": "18:00",
+        "start": "19:00"
+    },
+    "2025/9/20": {
+        "place": "愛知 名古屋 CLUB UPSET",
+        "area": "中部",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DMSXMcFtlPP/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1946736762522628605"
+        },
+        "open": "18:00",
+        "start": "19:00"
+    },
+    "2025/9/21": {
+        "place": "大阪 心斎橋 LIVE HOUSE ANIMA",
+        "area": "近畿",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DMSXMcFtlPP/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1946736762522628605"
+        },
+        "open": "17:00",
+        "start": "18:00"
+    },
     "2025/10/5": {
         "place": "山形 米沢 西條天満公園",
         "area": "北海道 ・ 東北",
