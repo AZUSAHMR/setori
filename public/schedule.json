@@ -107,5 +107,15 @@
         },
         "open": "11:30",
         "start": "12:30"
+    },
+    "2025/11/16": {
+        "place": "大阪 難波 Yogibo HOLY MOUNTAIN",
+        "area": "近畿",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DMsKpQCSJ38/",
+            "twitter": "https://x.com/tokyoalgorithm/status/1950149367316279609"
+        },
+        "open": "12:30",
+        "start": "13:00"
     }
 }
