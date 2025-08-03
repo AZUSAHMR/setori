@@ -1,14 +1,4 @@
 {
-    "2025/8/2": {
-        "place": "東京 新宿 LOFT",
-        "area": "関東",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DMrg9XpyOAL/",
-            "twitter": "https://x.com/OLEDICKFOGGY/status/1950375008494346474"
-        },
-        "open": "12:00",
-        "start": "13:00"
-    },
     "2025/8/9": {
         "place": "京都 GATTACA",
         "area": "近畿",
@@ -117,5 +107,14 @@
         },
         "open": "12:30",
         "start": "13:00"
+    },
+    "2025/11/29": {
+        "place": "沖縄",
+        "area": "九州 ・ 沖縄",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DMzIrerxBMZ/"
+        },
+        "open": "TBA",
+        "start": "TBA"
     }
 }
