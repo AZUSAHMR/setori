@@ -27,10 +27,16 @@ import {
     SidebarMenuSubButton,
     SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
-import { Sidebar, SidebarContent, SidebarRail } from "@/components/ui/sidebar";
+import {
+    Sidebar,
+    SidebarContent,
+    SidebarRail,
+    useSidebar,
+} from "@/components/ui/sidebar";
 import Setlist from "@/public/setlist.json";
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+    const { setOpenMobile } = useSidebar();
     const setlistList = [
         ...new Set(
             Object.keys(Setlist)
@@ -145,6 +151,11 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                                                                 href={
                                                                     subItem.url
                                                                 }
+                                                                onClick={() =>
+                                                                    setOpenMobile(
+                                                                        false,
+                                                                    )
+                                                                }
                                                             >
                                                                 <span>
                                                                     {
@@ -165,7 +176,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                                         asChild
                                         tooltip={item.title}
                                     >
-                                        <Link href={item.url}>
+                                        <Link
+                                            href={item.url}
+                                            onClick={() => setOpenMobile(false)}
+                                        >
                                             {item.icon && <item.icon />}
                                             <span>{item.title}</span>
                                         </Link>
