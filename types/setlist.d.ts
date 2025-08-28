@@ -3,6 +3,7 @@ declare module "@/public/setlist.json" {
         [date: string]: {
             place: string;
             area: string;
+            tag?: string[];
             setlist: string[][];
             encore?: string[][];
         };
