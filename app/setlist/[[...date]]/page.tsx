@@ -18,23 +18,38 @@ export default function Page({
     ];
 
     const { date } = React.use(params);
-    const target = date?.map((x) => ~~x).join("/") || "";
 
-    date
-        ?.slice(0, 3)
-        .map((x) => ~~x)
-        .forEach((x, index) => {
-            path.push({
-                title: `${x}${["年", "月", "日"][index]}`,
-                url: `/setlist/${date.slice(0, index + 1).join("/")}`,
-            });
+    const isTag = date && !/^\d+$/.test(date[0]);
+    const target = isTag
+        ? decodeURIComponent(date[0])
+        : date?.map((x) => ~~x).join("/") || "";
+
+    if (isTag) {
+        path.push({
+            title: target,
+            url: `/setlist/${encodeURIComponent(target)}`,
         });
+    } else {
+        date
+            ?.slice(0, 3)
+            .map((x) => ~~x)
+            .forEach((x, index) => {
+                path.push({
+                    title: `${x}${["年", "月", "日"][index]}`,
+                    url: `/setlist/${date.slice(0, index + 1).join("/")}`,
+                });
+            });
+    }
 
     return (
         <>
             <Header path={path}></Header>
             {Object.keys(Setlist)
-                .filter((x) => x.startsWith(target))
+                .filter(
+                    (x) =>
+                        x.startsWith(target) ||
+                        Setlist[x].tag?.includes(target),
+                )
                 .reverse()
                 .map((x) => (
                     <SetList date={x} key={x}></SetList>

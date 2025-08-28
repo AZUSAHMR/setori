@@ -38,19 +38,34 @@ import Setlist from "@/public/setlist.json";
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
     const { setOpenMobile } = useSidebar();
     const setlistList = [
-        ...new Set(
-            Object.keys(Setlist)
-                .reverse()
-                .map((date) => date.split("/").slice(0, -1).join("/")),
-        ),
-    ]
-        .map((date) => date.split("/"))
-        .map((date) => {
+        [
+            ...new Set(
+                Object.keys(Setlist)
+                    .map((date) => Setlist[date].tag)
+                    .filter(Boolean)
+                    .flat(),
+            ),
+        ].map((tag) => {
             return {
-                title: `${date.join("年")}月`.substring(2),
-                url: `/setlist/${date.join("/")}`,
+                title: tag,
+                url: `/setlist/${encodeURIComponent(tag!)}`,
             };
-        });
+        }),
+        [
+            ...new Set(
+                Object.keys(Setlist)
+                    .reverse()
+                    .map((date) => date.split("/").slice(0, -1).join("/")),
+            ),
+        ]
+            .map((date) => date.split("/"))
+            .map((date) => {
+                return {
+                    title: `${date.join("年")}月`.substring(2),
+                    url: `/setlist/${date.join("/")}`,
+                };
+            }),
+    ].flat();
 
     const items = [
         {
