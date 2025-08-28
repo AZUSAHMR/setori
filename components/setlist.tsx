@@ -78,6 +78,9 @@ export default function SetList({ date }: { date: string }) {
             <Table>
                 <TableCaption>
                     {date} {data.place}
+                    {data.tag && (
+                        <div className="text-xs">{data.tag.join(" · ")}</div>
+                    )}
                 </TableCaption>
                 <TableHeader>
                     <TableRow>
