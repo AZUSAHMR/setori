@@ -1,3 +1,4 @@
+import { pivot } from "@/components/filter";
 import Setlist from "@/public/setlist.json";
 
 export type COUNTER = Record<string, number>;
@@ -15,7 +16,7 @@ export const sort = (obj: COUNTER) => {
     return obj;
 };
 
-export const calc = (target = "") => {
+export const calc = (target = "", filter?: Record<string, boolean>) => {
     const best: COUNTER = {};
     const encore: COUNTER = {};
     const start: COUNTER = {};
@@ -25,6 +26,7 @@ export const calc = (target = "") => {
 
     Object.keys(Setlist)
         .filter((x) => x.startsWith(target))
+        .filter((x) => pivot(x, filter))
         .forEach((date) => {
             const songs = Setlist[date].setlist.flat();
 

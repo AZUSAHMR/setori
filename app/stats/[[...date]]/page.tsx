@@ -4,6 +4,7 @@ import * as React from "react";
 import { calc } from "@/lib/ranking";
 import Header from "@/components/header";
 import Ranking from "@/components/ranking";
+import Filter from "@/components/filter";
 
 export default function Page({
     params,
@@ -30,11 +31,16 @@ export default function Page({
             });
         });
 
-    const { best, encore, start, end, beforeMC, afterMC } = calc(target);
+    const [filter, setFilter] = React.useState<Record<string, boolean>>();
+    const { best, encore, start, end, beforeMC, afterMC } = calc(
+        target,
+        filter,
+    );
 
     return (
         <>
             <Header path={path}></Header>
+            <Filter target={target} filter={filter} setFilter={setFilter} />
             <Ranking title="よく出る" ranking={best} max={10} />
             <Ranking title="アンコールでよく出る" ranking={encore} max={5} />
             <Ranking title="これでよく始まる" ranking={start} max={5} />
