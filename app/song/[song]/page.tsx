@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/table";
 import Header from "@/components/header";
 import Ranking from "@/components/ranking";
+import Filter, { pivot } from "@/components/filter";
 import { COUNTER, count, sort, calc } from "@/lib/ranking";
 import Setlist from "@/public/setlist.json";
 import Song from "@/public/song.json";
@@ -64,7 +65,9 @@ export default function Page({
         },
     ];
 
-    const date = Object.keys(Setlist)
+    const [filter, setFilter] = React.useState<Record<string, boolean>>();
+    const filtered = Object.keys(Setlist).filter((x) => pivot(x, filter));
+    const date = filtered
         .filter(
             (date) =>
                 Setlist[date].setlist.flat().includes(title) ||
@@ -77,9 +80,7 @@ export default function Page({
 
     for (let i = 0; i < date.length - 1; i++) {
         dateSum += calcDate(date[i + 1], date[i]);
-        countSum +=
-            Object.keys(Setlist).indexOf(date[i]) -
-            Object.keys(Setlist).indexOf(date[i + 1]);
+        countSum += filtered.indexOf(date[i]) - filtered.indexOf(date[i + 1]);
     }
 
     const dateAver = Math.round((dateSum / (date.length - 1)) * 10) / 10;
@@ -135,7 +136,7 @@ export default function Page({
     sort(before);
     sort(after);
 
-    const { best, encore, start, end } = calc();
+    const { best, encore, start, end } = calc("", filter);
 
     const rankingBest = getRanking(best, title);
     const rankingEncore = getRanking(encore, title);
@@ -161,132 +162,141 @@ export default function Page({
                     ))}
                 </div>
             )}
-            <div className="flex flex-col gap-4 p-4 pt-0">
-                <div className="flex-1 rounded-xl bg-muted/50 p-4">
-                    <Table>
-                        <TableBody>
-                            <TableRow>
-                                <TableCell className="whitespace-nowrap w-[1%] font-medium">
-                                    最近登場
-                                </TableCell>
-                                <TableCell>
-                                    <Link
-                                        className="flex"
-                                        href={`/setlist/${date.at(0)!}`}
-                                    >
-                                        <span className="flex-1">
-                                            {date.at(0)}{" "}
-                                            {Setlist[date.at(0)!].place} (
-                                            {Object.keys(Setlist).length -
-                                                Object.keys(Setlist).indexOf(
-                                                    date.at(0)!,
-                                                ) -
-                                                1}
-                                            回前 ・ {calcDate(date.at(0)!)}日前)
-                                        </span>
-                                        <ChevronRight className="md:hidden" />
-                                    </Link>
-                                </TableCell>
-                            </TableRow>
-                            {!!countAver && (
+            <Filter target="" filter={filter} setFilter={setFilter} />
+            {!!date.length && (
+                <>
+                    <div className="flex flex-col gap-4 p-4 pt-0">
+                        <div className="flex-1 rounded-xl bg-muted/50 p-4">
+                            <Table>
+                                <TableBody>
+                                    <TableRow>
+                                        <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                            最近登場
+                                        </TableCell>
+                                        <TableCell>
+                                            <Link
+                                                className="flex"
+                                                href={`/setlist/${date.at(0)!}`}
+                                            >
+                                                <span className="flex-1">
+                                                    {date.at(0)}{" "}
+                                                    {Setlist[date.at(0)!].place}{" "}
+                                                    (
+                                                    {filtered.length -
+                                                        filtered.indexOf(
+                                                            date.at(0)!,
+                                                        ) -
+                                                        1}
+                                                    回前 ・{" "}
+                                                    {calcDate(date.at(0)!)}日前)
+                                                </span>
+                                                <ChevronRight className="md:hidden" />
+                                            </Link>
+                                        </TableCell>
+                                    </TableRow>
+                                    {!!countAver && (
+                                        <TableRow>
+                                            <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                                平均登場
+                                            </TableCell>
+                                            <TableCell>
+                                                約{countAver}回毎に ・ 約
+                                                {dateAver}
+                                                日毎に
+                                            </TableCell>
+                                        </TableRow>
+                                    )}
+                                    {rankingBest && (
+                                        <TableRow>
+                                            <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                                登場回数
+                                            </TableCell>
+                                            <TableCell>
+                                                {rankingBest.count}回 (
+                                                {rankingBest.rank}位)
+                                            </TableCell>
+                                        </TableRow>
+                                    )}
+                                    {rankingEncore && (
+                                        <TableRow>
+                                            <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                                再聴回数
+                                            </TableCell>
+                                            <TableCell>
+                                                {rankingEncore.count}回 (
+                                                {rankingEncore.rank}位)
+                                            </TableCell>
+                                        </TableRow>
+                                    )}
+                                    {rankingStart && (
+                                        <TableRow>
+                                            <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                                開始回数
+                                            </TableCell>
+                                            <TableCell>
+                                                {rankingStart.count}回 (
+                                                {rankingStart.rank}位)
+                                            </TableCell>
+                                        </TableRow>
+                                    )}
+                                    {rankingEnd && (
+                                        <TableRow>
+                                            <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                                終了回数
+                                            </TableCell>
+                                            <TableCell>
+                                                {rankingEnd.count}回 (
+                                                {rankingEnd.rank}
+                                                位)
+                                            </TableCell>
+                                        </TableRow>
+                                    )}
+                                </TableBody>
+                            </Table>
+                        </div>
+                    </div>
+                    <Ranking title="前でよく出る" ranking={before} max={5} />
+                    <Ranking title="後でよく出る" ranking={after} max={5} />
+                    <div className="rounded-xl bg-muted/50 m-4 mt-0 p-4">
+                        <Table>
+                            <TableCaption>ここで出る</TableCaption>
+                            <TableHeader>
                                 <TableRow>
-                                    <TableCell className="whitespace-nowrap w-[1%] font-medium">
-                                        平均登場
-                                    </TableCell>
-                                    <TableCell>
-                                        約{countAver}回毎に ・ 約{dateAver}
-                                        日毎に
-                                    </TableCell>
+                                    <TableHead className="whitespace-nowrap w-[1%]">
+                                        日付
+                                    </TableHead>
+                                    <TableHead>会場</TableHead>
                                 </TableRow>
-                            )}
-                            {rankingBest && (
-                                <TableRow>
-                                    <TableCell className="whitespace-nowrap w-[1%] font-medium">
-                                        登場回数
-                                    </TableCell>
-                                    <TableCell>
-                                        {rankingBest.count}回 (
-                                        {rankingBest.rank}位)
-                                    </TableCell>
-                                </TableRow>
-                            )}
-                            {rankingEncore && (
-                                <TableRow>
-                                    <TableCell className="whitespace-nowrap w-[1%] font-medium">
-                                        再聴回数
-                                    </TableCell>
-                                    <TableCell>
-                                        {rankingEncore.count}回 (
-                                        {rankingEncore.rank}位)
-                                    </TableCell>
-                                </TableRow>
-                            )}
-                            {rankingStart && (
-                                <TableRow>
-                                    <TableCell className="whitespace-nowrap w-[1%] font-medium">
-                                        開始回数
-                                    </TableCell>
-                                    <TableCell>
-                                        {rankingStart.count}回 (
-                                        {rankingStart.rank}位)
-                                    </TableCell>
-                                </TableRow>
-                            )}
-                            {rankingEnd && (
-                                <TableRow>
-                                    <TableCell className="whitespace-nowrap w-[1%] font-medium">
-                                        終了回数
-                                    </TableCell>
-                                    <TableCell>
-                                        {rankingEnd.count}回 ({rankingEnd.rank}
-                                        位)
-                                    </TableCell>
-                                </TableRow>
-                            )}
-                        </TableBody>
-                    </Table>
-                </div>
-            </div>
-            <Ranking title="前でよく出る" ranking={before} max={5} />
-            <Ranking title="後でよく出る" ranking={after} max={5} />
-            <div className="rounded-xl bg-muted/50 m-4 mt-0 p-4">
-                <Table>
-                    <TableCaption>ここで出る</TableCaption>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead className="whitespace-nowrap w-[1%]">
-                                日付
-                            </TableHead>
-                            <TableHead>会場</TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {date.map((x) => (
-                            <TableRow key={x}>
-                                <TableCell className="whitespace-nowrap w-[1%] font-medium">
-                                    <Link
-                                        className="flex py-2 md:py-0"
-                                        href={`/setlist/${x}`}
-                                    >
-                                        {x}
-                                    </Link>
-                                </TableCell>
-                                <TableCell>
-                                    <Link
-                                        className="flex py-2 md:py-0"
-                                        href={`/setlist/${x}`}
-                                    >
-                                        <span className="flex-1">
-                                            {Setlist[x].place}
-                                        </span>
-                                        <ChevronRight className="md:hidden" />
-                                    </Link>
-                                </TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </div>
+                            </TableHeader>
+                            <TableBody>
+                                {date.map((x) => (
+                                    <TableRow key={x}>
+                                        <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                            <Link
+                                                className="flex py-2 md:py-0"
+                                                href={`/setlist/${x}`}
+                                            >
+                                                {x}
+                                            </Link>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Link
+                                                className="flex py-2 md:py-0"
+                                                href={`/setlist/${x}`}
+                                            >
+                                                <span className="flex-1">
+                                                    {Setlist[x].place}
+                                                </span>
+                                                <ChevronRight className="md:hidden" />
+                                            </Link>
+                                        </TableCell>
+                                    </TableRow>
+                                ))}
+                            </TableBody>
+                        </Table>
+                    </div>
+                </>
+            )}
         </>
     );
 }

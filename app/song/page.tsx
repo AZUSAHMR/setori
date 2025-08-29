@@ -12,6 +12,7 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import Header from "@/components/header";
+import Filter from "@/components/filter";
 import { calc } from "@/lib/ranking";
 
 export default function Page() {
@@ -22,11 +23,13 @@ export default function Page() {
         },
     ];
 
-    const { best } = calc();
+    const [filter, setFilter] = React.useState<Record<string, boolean>>();
+    const { best } = calc("", filter);
 
     return (
         <>
             <Header path={path}></Header>
+            <Filter target="" filter={filter} setFilter={setFilter} />
             <div className="rounded-xl bg-muted/50 m-4 mt-0 p-4">
                 <Table>
                     <TableHeader>
