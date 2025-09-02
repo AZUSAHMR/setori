@@ -66,6 +66,14 @@ export default function Home() {
                                     href={`/place/${encodeURIComponent(Schedule[date].place)}`}
                                 >
                                     {Schedule[date].place}
+                                    {Schedule[date].turn && (
+                                        <>
+                                            {" "}
+                                            <small>
+                                                ({Schedule[date].turn})
+                                            </small>
+                                        </>
+                                    )}
                                 </Link>
                             </TableCell>
                             <TableCell className="whitespace-nowrap w-[1%]">

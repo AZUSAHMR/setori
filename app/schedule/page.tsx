@@ -66,6 +66,14 @@ export default function Page() {
                                         href={`/place/${encodeURIComponent(Schedule[x].place)}`}
                                     >
                                         {Schedule[x].place}
+                                        {Schedule[x].turn && (
+                                            <>
+                                                {" "}
+                                                <small>
+                                                    ({Schedule[x].turn})
+                                                </small>
+                                            </>
+                                        )}
                                     </Link>
                                 </TableCell>
                                 <TableCell className="whitespace-nowrap w-[1%]">

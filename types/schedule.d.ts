@@ -9,6 +9,7 @@ declare module "@/public/schedule.json" {
             };
             open?: string;
             start?: string;
+            turn?: string;
         };
     };
     export default value;
