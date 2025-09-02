@@ -91,7 +91,10 @@
     "2025/11/7": {
         "place": "福井 ハピリンホール",
         "area": "中部",
-        "link": {},
+        "link": {
+            "instagram": "https://www.instagram.com/p/DOGEp86AYNF/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1962811334577578228"
+        },
         "open": "18:30",
         "start": "19:00"
     },
