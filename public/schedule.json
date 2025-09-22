@@ -133,5 +133,25 @@
         },
         "open": "TBA",
         "start": "TBA"
+    },
+    "2025/12/21": {
+        "place": "岐阜 Club-G",
+        "area": "中部",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DO59WkpExTl/"
+        },
+        "open": "12:00",
+        "start": "13:00",
+        "turn": "TBA"
+    },
+    "2026/2/1": {
+        "place": "難波 Mele",
+        "area": "近畿",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DO5od_zEhrY/",
+            "twitter": "https://x.com/namba_mele/status/1970066150043357691"
+        },
+        "open": "16:15",
+        "start": "17:00"
     }
 }
