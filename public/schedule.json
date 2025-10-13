@@ -1,15 +1,4 @@
 {
-    "2025/10/12": {
-        "place": "東京 新宿 LOFT",
-        "area": "関東",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DNgHmjZoTJp/",
-            "twitter": "https://x.com/OLEDICKFOGGY/status/1958401943900237910"
-        },
-        "open": "12:00",
-        "start": "12:30",
-        "turn": "19:30 ~ 20:10"
-    },
     "2025/10/20": {
         "place": "神奈川 F.A.D YOKOHAMA",
         "area": "関東",
@@ -72,7 +61,7 @@
         "start": "19:00"
     },
     "2025/11/8": {
-        "place": "大阪 心斎橋",
+        "place": "大阪 心斎橋 LIVE HOUSE ANIMA",
         "area": "近畿",
         "link": {
             "instagram": "https://www.instagram.com/p/DNgAPBqC82R/",
@@ -80,7 +69,7 @@
         },
         "open": "11:30",
         "start": "12:30",
-        "turn": "TBA"
+        "turn": "19:30 ~ 20:00"
     },
     "2025/11/9": {
         "place": "東京 恵比寿 The Garden Hall",
