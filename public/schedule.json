@@ -2,6 +2,7 @@
     "2025/11/16": {
         "place": "大阪 難波 Yogibo HOLY MOUNTAIN",
         "area": "近畿",
+        "turn": "15:20 ~ 16:10",
         "link": {
             "instagram": "https://www.instagram.com/p/DMtssw3OKt_/",
             "twitter": "https://x.com/OLEDICKFOGGY/status/1950374472294498336"
@@ -89,5 +90,25 @@
         },
         "open": "16:15",
         "start": "17:00"
+    },
+    "2026/2/14": {
+        "place": "神奈川 F.A.D YOKOHAMA",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DQwSRhKD6lZ/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1987371956866543753"
+        },
+        "open": "17:30",
+        "start": "18:00"
+    },
+    "2026/3/6": {
+        "place": "東京 新宿 ANTIKNOCK",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DQ0eDtpjj3H/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/1987366467084665047"
+        },
+        "open": "18:30",
+        "start": "19:30"
     }
 }
