@@ -109,5 +109,14 @@
         },
         "open": "17:00",
         "start": "18:00"
+    },
+    "2026/4/3": {
+        "place": "東京 新宿 LOFT",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DROUgVeAfAv/"
+        },
+        "open": "17:30",
+        "start": "18:30"
     }
 }
