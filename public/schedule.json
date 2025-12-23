@@ -69,6 +69,16 @@
         "open": "18:30",
         "start": "19:30"
     },
+    "2026/3/20": {
+        "place": "埼玉 越谷 EASY GOINGS",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DSmo7fPgc0M/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2003423263108821455"
+        },
+        "open": "19:00",
+        "start": "19:30"
+    },
     "2026/3/22": {
         "place": "大阪 心斎橋 CONPASS",
         "area": "近畿",
@@ -92,7 +102,10 @@
     "2026/4/19": {
         "place": "東京 新代田 FEVER",
         "area": "関東",
-        "link": {},
+        "link": {
+            "instagram": "https://www.instagram.com/p/DSjxCTsksra/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2003021715916636462"
+        },
         "open": "16:00",
         "start": "16:00"
     },
