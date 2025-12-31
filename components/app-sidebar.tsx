@@ -120,6 +120,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                     title: "九州 ・ 沖縄",
                     url: `/place/${encodeURIComponent("九州 ・ 沖縄")}`,
                 },
+                {
+                    title: "海外",
+                    url: `/place/${encodeURIComponent("海外")}`,
+                },
             ],
         },
         {
