@@ -1,14 +1,4 @@
 {
-    "2026/1/17": {
-        "place": "兵庫 神戸 VARIT.",
-        "area": "近畿",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DRMa97EAdZ4/",
-            "twitter": "https://x.com/OLEDICKFOGGY/status/1990726111450341847"
-        },
-        "open": "16:15",
-        "start": "17:00"
-    },
     "2026/1/30": {
         "place": "神奈川 横浜 BUZZFRONT",
         "area": "関東",
@@ -78,6 +68,16 @@
         },
         "open": "18:30",
         "start": "19:30"
+    },
+    "2026/3/15": {
+        "place": "東京 新宿 ANTIKNOCK",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DTmdgwbD2Dj/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2012429115899654462"
+        },
+        "open": "14:15",
+        "start": "14:45"
     },
     "2026/3/20": {
         "place": "埼玉 越谷 EASY GOINGS",
