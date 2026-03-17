@@ -1,14 +1,4 @@
 {
-    "2026/3/15": {
-        "place": "東京 新宿 ANTIKNOCK",
-        "area": "関東",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DTmdgwbD2Dj/",
-            "twitter": "https://x.com/OLEDICKFOGGY/status/2012429115899654462"
-        },
-        "open": "14:15",
-        "start": "14:45"
-    },
     "2026/3/20": {
         "place": "埼玉 越谷 EASY GOINGS",
         "area": "関東",
@@ -118,6 +108,16 @@
         },
         "open": "18:00",
         "start": "19:00"
+    },
+    "2026/5/30": {
+        "place": "東京 新宿 LOFT",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DV8BVn6DxKW/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2033460511879348703"
+        },
+        "open": "17:30",
+        "start": "18:30"
     },
     "2026/6/20": {
         "place": "東京 初台 WALL",
