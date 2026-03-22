@@ -138,5 +138,14 @@
         },
         "open": "19:00",
         "start": "19:30"
+    },
+    "2026/8/22": {
+        "place": "神奈川 川崎 CLUB CITTA'",
+        "area": "関東",
+        "link": {
+            "twitter": "https://x.com/clubcitta_1988/status/2035643247503241712"
+        },
+        "open": "11:00",
+        "start": "11:45"
     }
 }
