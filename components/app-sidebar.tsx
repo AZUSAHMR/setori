@@ -55,13 +55,27 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             ...new Set(
                 Object.keys(Setlist)
                     .reverse()
-                    .map((date) => date.split("/").slice(0, -1).join("/")),
+                    .map((date) => {
+                        const target = date.split("/");
+                        return date
+                            .split("/")
+                            .slice(
+                                0,
+                                target[0] ===
+                                    new Date().getFullYear().toString()
+                                    ? -1
+                                    : -2,
+                            )
+                            .join("/");
+                    }),
             ),
         ]
             .map((date) => date.split("/"))
             .map((date) => {
                 return {
-                    title: `${date.join("年")}月`.substring(2),
+                    title: `${date.join("年")}${date.length === 1 ? "年" : "月"}`.substring(
+                        2,
+                    ),
                     url: `/setlist/${date.join("/")}`,
                 };
             }),
