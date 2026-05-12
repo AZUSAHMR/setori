@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/table";
 import Header from "@/components/header";
 import Schedule from "@/public/schedule.json";
+import Personal from "@/public/personal.json";
 
 export default function Page() {
     const path = [
@@ -25,6 +26,14 @@ export default function Page() {
     ];
 
     const date = Object.keys(Schedule).filter(
+        (x) =>
+            differenceInCalendarDays(
+                TZDate.tz("Asia/Tokyo"),
+                new TZDate(x, "Asia/Tokyo"),
+            ) <= 0,
+    );
+
+    const personalDate = Object.keys(Personal).filter(
         (x) =>
             differenceInCalendarDays(
                 TZDate.tz("Asia/Tokyo"),
@@ -94,6 +103,73 @@ export default function Page() {
                                     {Schedule[x].link.twitter && (
                                         <Link
                                             href={Schedule[x].link.twitter}
+                                            target="_blank"
+                                        >
+                                            <Twitter className="inline mx-1" />
+                                        </Link>
+                                    )}
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </div>
+            <div className="rounded-xl bg-muted/50 m-4 mt-0 p-4">
+                <Table>
+                    <TableHeader>
+                        <TableRow>
+                            <TableHead className="whitespace-nowrap w-[1%]">
+                                日付
+                            </TableHead>
+                            <TableHead>出演</TableHead>
+                            <TableHead>会場</TableHead>
+                            <TableHead className="whitespace-nowrap w-[1%]">
+                                OPEN
+                            </TableHead>
+                            <TableHead className="whitespace-nowrap w-[1%]">
+                                START
+                            </TableHead>
+                            <TableHead className="whitespace-nowrap w-[1%]">
+                                #
+                            </TableHead>
+                        </TableRow>
+                    </TableHeader>
+                    <TableBody>
+                        {personalDate.map((x) => (
+                            <TableRow key={x}>
+                                <TableCell className="whitespace-nowrap w-[1%] font-medium">
+                                    {x}
+                                </TableCell>
+                                <TableCell className="whitespace-nowrap">
+                                    {Personal[x].name}
+                                </TableCell>
+                                <TableCell>
+                                    {Personal[x].place}
+                                    {Personal[x].turn && (
+                                        <>
+                                            {" "}
+                                            <small>({Schedule[x].turn})</small>
+                                        </>
+                                    )}
+                                </TableCell>
+                                <TableCell className="whitespace-nowrap w-[1%]">
+                                    {Personal[x].open}
+                                </TableCell>
+                                <TableCell className="whitespace-nowrap w-[1%]">
+                                    {Personal[x].start}
+                                </TableCell>
+                                <TableCell className="whitespace-nowrap w-[1%]">
+                                    {Personal[x].link.instagram && (
+                                        <Link
+                                            href={Personal[x].link.instagram}
+                                            target="_blank"
+                                        >
+                                            <Instagram className="inline mx-1" />
+                                        </Link>
+                                    )}
+                                    {Personal[x].link.twitter && (
+                                        <Link
+                                            href={Personal[x].link.twitter}
                                             target="_blank"
                                         >
                                             <Twitter className="inline mx-1" />
