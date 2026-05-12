@@ -39,6 +39,36 @@
         "open": "19:00",
         "start": "19:30"
     },
+    "2026/7/18": {
+        "place": "兵庫 神戸 108",
+        "area": "近畿",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DYMN3PNDVS9/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2053767174951731327"
+        },
+        "open": "18:30",
+        "start": "19:00"
+    },
+    "2026/7/19": {
+        "place": "静岡 沼津 ROOP SOUNDS",
+        "area": "中部",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DYOygkBAW67/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2054109710413082839"
+        },
+        "open": "17:00",
+        "start": "17:00"
+    },
+    "2026/7/26": {
+        "place": "東京 下北沢 SHELTER",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DXrLLUhEfwy/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2049292286677426376"
+        },
+        "open": "18:30",
+        "start": "19:00"
+    },
     "2026/8/1": {
         "place": "東京 渋谷 HOME & LUSH",
         "area": "関東",
@@ -47,6 +77,16 @@
             "twitter": "https://x.com/OLEDICKFOGGY/status/2043564290834354306"
         },
         "open": "15:00",
+        "start": "15:00"
+    },
+    "2026/8/2": {
+        "place": "東京 新宿 LOFT",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DYO5hIKjns5/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2054136734594769160"
+        },
+        "open": "14:00",
         "start": "15:00"
     },
     "2026/8/22": {
