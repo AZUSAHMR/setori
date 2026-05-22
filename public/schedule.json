@@ -88,5 +88,15 @@
         },
         "open": "11:00",
         "start": "11:45"
+    },
+    "2026/9/6": {
+        "place": "大阪 Yogibo META VALLEY & HOLY MOUNTAIN",
+        "area": "近畿",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DXrKh6aEkhc/",
+            "twitter": "https://x.com/tokyoalgorithm/status/2049081252981199228"
+        },
+        "open": "11:00",
+        "start": "12:00"
     }
 }
