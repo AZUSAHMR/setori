@@ -48,5 +48,15 @@
         },
         "open": "16:00",
         "start": "16:30"
+    },
+    "2026/7/4": {
+        "place": "山梨 甲府 喫茶 陣",
+        "area": "中部",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DYrtDJggfHG/"
+        },
+        "open": "15:30",
+        "start": "16:00"
     }
 }
