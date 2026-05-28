@@ -98,5 +98,15 @@
         },
         "open": "11:00",
         "start": "12:00"
+    },
+    "2026/9/13": {
+        "place": "東京 八王子 MATCH VOX",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DY3mh_lAV0c/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2059853585207460217"
+        },
+        "open": "15:45",
+        "start": "16:30"
     }
 }
