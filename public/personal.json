@@ -1,34 +1,4 @@
 {
-    "2026/5/23": {
-        "place": "東京 駒込 Farm to Home",
-        "area": "関東",
-        "name": "伊藤雄和",
-        "link": {
-            "twitter": "https://x.com/rakujitsu_do/status/2050964827049496853"
-        },
-        "open": "17:30",
-        "start": "18:00"
-    },
-    "2026/5/31": {
-        "place": "岐阜 高山 駱駝",
-        "area": "中部",
-        "name": "伊藤雄和",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DX5g5_biU8k/"
-        },
-        "open": "18:00",
-        "start": "19:00"
-    },
-    "2026/6/3": {
-        "place": "東京 下北沢 mona records",
-        "area": "関東",
-        "name": "伊藤雄和　スージー",
-        "link": {
-            "twitter": "https://x.com/miyanotetsuro/status/2053412808570843429"
-        },
-        "open": "19:00",
-        "start": "19:00"
-    },
     "2026/6/6": {
         "place": "埼玉 熊谷 モルタルレコード",
         "area": "関東",
@@ -48,6 +18,40 @@
         },
         "open": "16:00",
         "start": "16:30"
+    },
+    "2026/6/14": {
+        "place": "愛知 豊田 滑板洞",
+        "area": "中部",
+        "name": "伊藤雄和",
+        "link": {}
+    },
+    "2026/6/21": {
+        "place": "群馬 大田 SLY",
+        "area": "関東",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DYEhB-HEtRb/"
+        }
+    },
+    "2026/06/21": {
+        "place": "東京 石神井町 mou mou famous deli",
+        "area": "関東",
+        "name": "もうひとつの水曜日",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DZJxr99SQbx/"
+        }
+    },
+    "2026/6/25": {
+        "place": "福島 いわき morrow`s",
+        "area": "北海道 ・ 東北",
+        "name": "伊藤雄和",
+        "link": {}
+    },
+    "2026/6/27": {
+        "place": "宮城 刈田郡蔵王町 味彩",
+        "area": "北海道 ・ 東北",
+        "name": "伊藤雄和",
+        "link": {}
     },
     "2026/7/4": {
         "place": "山梨 甲府 喫茶 陣",
