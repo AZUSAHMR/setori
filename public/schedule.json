@@ -73,7 +73,8 @@
         "place": "東京 新宿 LOFT",
         "area": "関東",
         "link": {
-            "instagram": "https://www.instagram.com/p/DZMuj_9AeYi/"
+            "instagram": "https://www.instagram.com/p/DZMuj_9AeYi/",
+            "twitter": "https://x.com/meaning666/status/2062834362782249186"
         },
         "open": "18:00",
         "start": "18:30"
@@ -97,6 +98,26 @@
         },
         "open": "16:30",
         "start": "17:30"
+    },
+    "2026/8/29": {
+        "place": "和歌山 新宮 D.T MAMA",
+        "area": "近畿",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DZPRde0jR7H/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2063218761415762234"
+        },
+        "open": "18:00",
+        "start": "19:00"
+    },
+    "2026/8/30": {
+        "place": "愛知 名古屋 HUCK FINN",
+        "area": "中部",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DZPRde0jR7H/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2063218761415762234"
+        },
+        "open": "17:00",
+        "start": "18:00"
     },
     "2026/9/6": {
         "place": "大阪 Yogibo META VALLEY & HOLY MOUNTAIN",
