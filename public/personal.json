@@ -1,25 +1,11 @@
 {
-    "2026/6/25": {
-        "place": "福島 いわき morrow`s",
-        "area": "北海道 ・ 東北",
-        "name": "伊藤雄和",
-        "link": {}
-    },
-    "2026/6/27": {
-        "place": "宮城 刈田郡蔵王町 味彩",
-        "area": "北海道 ・ 東北",
-        "name": "伊藤雄和",
-        "link": {}
-    },
-    "2026/7/4": {
-        "place": "山梨 甲府 喫茶 陣",
-        "area": "中部",
+    "2026/8/5": {
+        "place": "広島 4·14",
+        "area": "中国 ・ 四国",
         "name": "伊藤雄和",
         "link": {
-            "instagram": "https://www.instagram.com/p/DYrtDJggfHG/"
-        },
-        "open": "15:30",
-        "start": "16:00"
+            "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/"
+        }
     },
     "2026/8/6": {
         "place": "岡山 津山 タルマッシュアロー",
@@ -27,6 +13,46 @@
         "name": "伊藤雄和",
         "link": {
             "instagram": "https://www.instagram.com/p/DZw5Ew3B4iv/"
+        }
+    },
+    "2026/8/07": {
+        "place": "東京 下北沢 mona records",
+        "area": "関東",
+        "name": "SUZZY",
+        "link": {
+            "instagram": "https://www.instagram.com/p/Da27WbDGggk/"
+        }
+    },
+    "2026/8/7": {
+        "place": "東京 下北沢 mona records",
+        "area": "関東",
+        "name": "SUZZY",
+        "link": {
+            "instagram": "https://www.instagram.com/p/Da27WbDGggk/"
+        }
+    },
+    "2026/8/9": {
+        "place": "岐阜 柳ケ瀬 COLORS",
+        "area": "中部",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/"
+        }
+    },
+    "2026/8/27": {
+        "place": "東京 新宿 KAVACHIYA",
+        "area": "関東",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/"
+        }
+    },
+    "2026/8/28": {
+        "place": "和歌山 NO.11",
+        "area": "近畿",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/"
         }
     }
 }
