@@ -98,6 +98,26 @@
         "open": "18:00",
         "start": "18:30"
     },
+    "2026/10/3": {
+        "place": "福島 AREA559",
+        "area": "北海道 ・ 東北",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DcGMsx9lK1x/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2088931572770808169"
+        },
+        "open": "18:00",
+        "start": "19:00"
+    },
+    "2026/10/9": {
+        "place": "東京 渋谷 CYCLONE",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DcGDscLAX8K/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2088911475767492775"
+        },
+        "open": "18:30",
+        "start": "19:00"
+    },
     "2026/10/25": {
         "place": "東京 中野 MOONSTEP",
         "area": "関東",
