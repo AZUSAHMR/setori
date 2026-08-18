@@ -1,44 +1,4 @@
 {
-    "2026/8/5": {
-        "place": "広島 4·14",
-        "area": "中国 ・ 四国",
-        "name": "伊藤雄和",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/"
-        }
-    },
-    "2026/8/6": {
-        "place": "岡山 津山 タルマッシュアロー",
-        "area": "中国 ・ 四国",
-        "name": "伊藤雄和",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DZw5Ew3B4iv/"
-        }
-    },
-    "2026/8/07": {
-        "place": "三重 四日市 MISAYA",
-        "area": "中部",
-        "name": "伊藤雄和",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DZw5Ew3B4iv/"
-        }
-    },
-    "2026/8/7": {
-        "place": "東京 下北沢 mona records",
-        "area": "関東",
-        "name": "SUZZY",
-        "link": {
-            "instagram": "https://www.instagram.com/p/Da27WbDGggk/"
-        }
-    },
-    "2026/8/9": {
-        "place": "岐阜 柳ケ瀬 COLORS",
-        "area": "中部",
-        "name": "伊藤雄和",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/"
-        }
-    },
     "2026/8/27": {
         "place": "東京 新宿 KAVACHIYA",
         "area": "関東",
@@ -53,6 +13,71 @@
         "name": "伊藤雄和",
         "link": {
             "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/"
+        }
+    },
+    "2026/9/11": {
+        "place": "東京 渋谷 diskunion ROCK in TOKYO",
+        "area": "関東",
+        "name": "SUZZY",
+        "link": {
+            "twitter": "https://x.com/diwproductsgrou/status/2084553963014361437"
+        }
+    },
+     "2026/9/18": {
+        "place": "福島 会津若松 BAR Z",
+        "area": "北海道 ・ 東北",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbZbkZSgegE/"
+        }
+    },
+     "2026/9/19": {
+        "place": "山形 Playground Cafe BOX",
+        "area": "北海道 ・ 東北",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbZbkZSgegE/"
+        }
+    },
+     "2026/9/20": {
+        "place": "宮城 蔵王町 味彩",
+        "area": "北海道 ・ 東北",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbZbkZSgegE/"
+        }
+    },
+    "2026/9/26": {
+        "place": "東京 下北沢 SHELTER",
+        "area": "関東",
+        "name": "SUZZY",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbXtS4Rgcp-/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2085931912649162793"
+        }
+    },
+    "2026/10/2": {
+        "place": "福島 津軽麦酒",
+        "area": "北海道 ・ 東北",
+        "name": "伊藤雄和",
+        "link": {
+            "twitter": "https://x.com/Tomo_H5334/status/2088938507696021578"
+        }
+    },
+    "2026/10/23": {
+        "place": "埼玉 熊谷 モルタルレコード",
+        "area": "関東",
+        "name": "伊藤雄和",
+        "link": {
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2089666097519960449"
+        }
+    },
+    "2026/11/2": {
+        "place": "京都 SANGOU",
+        "area": "近畿",
+        "name": "伊藤雄和",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DbS5NmApem6/"
         }
     }
 }
