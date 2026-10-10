@@ -1,14 +1,4 @@
 {
-    "2026/10/9": {
-        "place": "東京 渋谷 CYCLONE",
-        "area": "関東",
-        "link": {
-            "instagram": "https://www.instagram.com/p/DcGDscLAX8K/",
-            "twitter": "https://x.com/OLEDICKFOGGY/status/2088911475767492775"
-        },
-        "open": "18:30",
-        "start": "19:00"
-    },
     "2026/10/24": {
         "place": "東京 下北沢 BASEMENT BAR",
         "area": "関東",
@@ -95,5 +85,35 @@
         },
         "open": "TBA",
         "start": "TBA"
+    },
+    "2026/12/5": {
+        "place": "大阪 心斎橋 LIVE HOUSE ANIMA",
+        "area": "近畿",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DeTUB_SgQAv/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2108790236818051554"
+        },
+        "open": "18:00",
+        "start": "19:00"
+    },
+    "2026/12/6": {
+        "place": "愛知 名古屋 CLUB UPSET",
+        "area": "中部",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DeTUB_SgQAv/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2108790236818051554"
+        },
+        "open": "17:00",
+        "start": "18:00"
+    },
+    "2026/12/19": {
+        "place": "東京 下北沢 SHELTER",
+        "area": "関東",
+        "link": {
+            "instagram": "https://www.instagram.com/p/DeTUB_SgQAv/",
+            "twitter": "https://x.com/OLEDICKFOGGY/status/2108790236818051554"
+        },
+        "open": "18:00",
+        "start": "19:00"
     }
 }
